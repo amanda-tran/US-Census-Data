@@ -32,6 +32,10 @@ a {
   color: #009dff;
 }
 
+#portfolio {
+  size: 50%;
+}
+
 /*#wrap {
   width: 800px;
   height: 600px;
