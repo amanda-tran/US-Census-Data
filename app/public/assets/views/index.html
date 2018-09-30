@@ -152,23 +152,17 @@
                     <!-- Start Default Bar Graph -->
                     <ul class="bar-graph googleFontOpenSans">
                         <h1 class="timesNewRomanText">General Population Statistics</h1>
-                        <li>
-                            <h4>Percentage of the Population Under Age 18<p id="textPercentPopulationUnder18"></p>
+                        <!-- <li> -->
+                            <!-- <h4>Percentage of the Population Under Age 18<p id="textPercentPopulationUnder18"></p>
                                 </p>
+                            </h4> -->
+                            <!-- <div id="graphPercentPopulationUnder18" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div> -->
+                        <!-- </li> -->
+                        <!-- <li> -->
+                            <!-- <h4>Percentage of Families Below Poverty Level<p id="textFamiliesBelowPovertyLevel"></p>
                             </h4>
-                            <div id="graphPercentPopulationUnder18" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div>
-                        </li>
-                        <li>
-                            <h4>Percentage of the Population Above Age 65<p id="textPercentPopulationOver65"></p>
-                                </p>
-                            </h4>
-                            <div id="graphPercentPopulationOver65" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div>
-                        </li>
-                        <li>
-                            <h4>Percentage of Families Below Poverty Level<p id="textFamiliesBelowPovertyLevel"></p>
-                            </h4>
-                            <div id="graphFamiliesBelowPovertyLevel" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div>
-                        </li>
+                            <div id="graphFamiliesBelowPovertyLevel" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div> -->
+                        <!-- </li> -->
                         <li>
                             <h4>Mean Family Income<p id="textMeanFamilyIncome"></p>
                             </h4>
@@ -181,6 +175,12 @@
                             <h4>Unemployment Rate (2010)<p id="textUnemploymentRate2010"></p>
                             </h4>
                             <div id="graphUnemploymentRate2010" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div>
+                        </li>
+                        <li>
+                            <h4>Percentage of the Population Above Age 65<p id="textPercentPopulationOver65"></p>
+                                </p>
+                            </h4>
+                            <div id="graphPercentPopulationOver65" class="bar-wrap"><span class="bar-fill" style="width: 0%;"></span></div>
                         </li>
                     </ul>
 
@@ -289,12 +289,10 @@
         <!-- End US Default Bar Graph 2 -->
         <div class="container">
             <div class="row">
-
-
-                <canvas id="myChart" width="400" height="400"></canvas>
-
                 <!-- Start Income Distribution Graph -->
+                <!-- Default graph before searching a city -->
                 <canvas id="myChart" width="400" height="200"></canvas>
+                <!-- Custom city graph -->
                 <canvas id="myChartCustom" width="400" height="200"></canvas>
                 <!-- End Income Distribution Graph -->
 <!--
@@ -332,9 +330,10 @@
 
     <section class="p-0" id="portfolio">
         <div class="container-fluid p-0">
-            <div class="row no-gutters popup-gallery">
+            <div class="row no-gutters no">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/1.jpg">
+                    <a class="portfolio-box" href="https://www.census.gov/quickfacts/fact/table/losangelescountycalifornia/PST045217"
+                        target="_blank">
                         <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/1.jpg" alt="">
                             <div class="portfolio-box-caption background-white">
                             <div class="portfolio-box-caption-content">
@@ -350,7 +349,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/2.jpg">
+                <a class="portfolio-box" href="https://www.census.gov/quickfacts/ny" target="_blank">
                         <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/2.jpg" alt="">
                             <div class="portfolio-box-caption background-white">
                             <div class="portfolio-box-caption-content">
@@ -365,7 +364,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/3.jpg">
+                    <a class="portfolio-box" href="https://www.census.gov/quickfacts/chicagocityillinois" target="_blank">
                         <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/3.jpg" alt="">
                             <div class="portfolio-box-caption background-white">
                                 <div class="portfolio-box-caption-content">
@@ -380,7 +379,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/4.jpg">
+                    <a class="portfolio-box" href="https://www.census.gov/quickfacts/fact/table/seattlecitywashington,US/PST045217" target="_blank">
                         <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/4.jpg" alt="">
                     <div class="portfolio-box-caption background-white">
                             <div class="portfolio-box-caption-content">
@@ -395,25 +394,28 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/5.jpg">
-                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/5.jpg" alt="">
-                <div class="portfolio-box-caption background-white">
-                            <div class="portfolio-box-caption-content">
-                                <div id="timezoneSanta" class="project-category text-faded">
-                                    12:00:00 pm
-                                </div>
-                                <div class="project-name">
-                                    Santa Monica
-                                </div>
+                    <!-- commenting this to keep it for later -->
+                    <!-- <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/5.jpg"> -->
+                    <a class="portfolio-box" href="https://www.census.gov/quickfacts/fact/table/santamonicacitycalifornia,US/PST045217" target="_blank">
+                        <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/5.jpg" alt="" />
+
+                    <div class="portfolio-box-caption background-white">
+                        <div class="portfolio-box-caption-content">
+                            <div id="timezoneSanta" class="project-category text-faded">
+                                12:00:00 pm
+                            </div>
+                            <div class="project-name">
+                                Santa Monica
                             </div>
                         </div>
+                    </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="../bootstrap/img/portfolio/fullsize/6.jpg">
+                <a class="portfolio-box" href="https://www.census.gov/quickfacts/bostoncitymassachusetts" target="_blank">
                         <img class="img-fluid" src="../bootstrap/img/portfolio/thumbnails/6.jpg" alt="">
                             <div class="portfolio-box-caption background-white">
-                             <div class="portfolio-box-caption-content">
+                            <div class="portfolio-box-caption-content">
                                 <div class id="timezoneBost" ="project-category text-faded">
                                     12:00:00 pm
                                 </div>
@@ -447,7 +449,7 @@
                 <div class="col-lg-4 mr-auto text-center">
                     <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
                     <p>
-                        <a href="mailto:your-email@your-domain.com">USCensusBureau.gmail.com</a>
+                        <a href="mailto:your-email@your-domain.com">USCensusBureau@gmail.com</a>
                     </p>
                 </div>
             </div>
